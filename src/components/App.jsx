@@ -1,6 +1,4 @@
-//import PropTypes from 'prop-types';
 import React, { useState }  from 'react';
-//import React, { useState } from 'react';
 import { GlobalStyle } from 'CreateGlobalStyle';
 import { SectionPart } from 'components/Section/Section';
 import { FeedbackOptions } from './Feedbacksection/Feedback'; 
@@ -32,12 +30,9 @@ export const App = () => {
   }
   const totalFeedback=good+bad+neutral
   const positiveFeedbackPercentage= Math.round((good * 100) / totalFeedback);
-    //   }
+ 
 
-  // useEffect(() => {
-  //   const totalFeedBack = good + bad+neutral;
-  //   console.log(totalFeedBack)
-  // }, [good, bad,neutral]);}
+
   return (
     <div>
       <GlobalStyle /> 
@@ -64,9 +59,7 @@ export const App = () => {
     </div>
   );
 };
-//  totalFeedback={totalFeedback}
-//positiveFeedbackPercentage={positiveFeedbackPercentage}
-//-------------------------------------
+
 // import React, { Component } from 'react';
 // import { GlobalStyle } from 'CreateGlobalStyle';
 // import { SectionPart } from 'components/Section/Section';
